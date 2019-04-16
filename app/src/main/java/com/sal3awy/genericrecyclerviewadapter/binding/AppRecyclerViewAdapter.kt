@@ -10,7 +10,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.android.databinding.library.baseAdapters.BR
 
-class AppRecyclerViewAdapter<T : RecyclerViewEntity>(
+class AppRecyclerViewAdapter<T>(
     diffCallback: DiffUtil.ItemCallback<T>
 ) :
     ListAdapter<T, AppRecyclerViewAdapter.ViewHolder<ViewDataBinding>>(diffCallback) {
