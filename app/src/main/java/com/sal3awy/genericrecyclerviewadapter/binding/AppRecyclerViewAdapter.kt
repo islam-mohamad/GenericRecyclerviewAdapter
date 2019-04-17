@@ -30,6 +30,11 @@ class AppRecyclerViewAdapter<T>(
         return ViewHolder(bind!!)
     }
 
+    /**
+     * set variables to the layout item
+     *  model variable for the entity class
+     *  callback variable is an interface far handling clicks on layout item views
+     * */
     @NonNull
     override fun onBindViewHolder(@NonNull holder: ViewHolder<ViewDataBinding>, position: Int) {
         val model: T = getItem(position)
@@ -46,6 +51,10 @@ class AppRecyclerViewAdapter<T>(
         return layoutId!!
     }
 
+    /**
+     * set the recyclerView item layout ID
+     * @sample layoutId can be set like  R.layout.item_recyclerView
+     * */
     fun setItemViewType(layoutId: Int) {
         this.layoutId = layoutId
     }

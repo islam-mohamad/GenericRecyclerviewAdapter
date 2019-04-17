@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity(), UserCallBack {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+
+       // adapter without callback interface for clicks handling
+
         val adapter1: AppRecyclerViewAdapter<User> = AppRecyclerViewAdapter(object : DiffUtil.ItemCallback<User>() {
             override fun areItemsTheSame(p0: User, p1: User): Boolean {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -28,6 +31,7 @@ class MainActivity : AppCompatActivity(), UserCallBack {
 
         })
 
+        // adapter with callback interface for clicks handling
         val adapter2: AppRecyclerViewAdapter<User> =
             AppRecyclerViewAdapter(this, object : DiffUtil.ItemCallback<User>() {
                 override fun areItemsTheSame(p0: User, p1: User): Boolean {
