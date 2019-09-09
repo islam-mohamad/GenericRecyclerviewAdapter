@@ -1,7 +1,7 @@
 package com.sal3awy.genericrecyclerviewadapter
 
-import com.sal3awy.genericrecyclerviewadapter.binding.RecyclerViewCallback
+import com.sal3awy.ItemRecyclerViewCallback
 
-interface UserCallBack : RecyclerViewCallback {
+interface UserCallBack : ItemRecyclerViewCallback {
     fun onUserClicked(user: User)
 }
