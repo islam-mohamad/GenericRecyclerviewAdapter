@@ -88,7 +88,7 @@ Optionally declare `callback` data binding variable of type any Interface but mu
 
 ```
 ##### Step 5. setup recyclerView item layout View states
-use adapter.setItemSelected(user, false) for setting view state. If Second parameter is true you will enable multiple selection which mean save other views state.
+use `adapter.setItemSelected(user, false)` for setting view state. If Second parameter is true you will enable multiple selection which mean save other views state.
 
 ## Hint
 * Step five are optional in case there is no View states.
